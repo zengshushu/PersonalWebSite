@@ -95,6 +95,8 @@ function changeStar() {
             rotateCanvas(random(1, 100));
     };
 }
+
+
 function getMsg() {
     var t = [
         "希望能成为有趣的人",

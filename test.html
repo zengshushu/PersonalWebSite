@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+          Nekotora's Homepage fLaG.Moe v9
+          Build at 2019-03-29T17:25:32.306Z 
+        -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1">
+    <title>哞菇 / Nekotora - fLaG.Moe</title>
+    <meta name="description" content="番萌是哞菇牛的个人网站，期待与更多的人相遇！">
+    <meta name="keywords" content="哞菇 哞菇牛 蘑菇牛 哞菇神社 番萌 Nekotora 喵小牛 二次元 个人网站 博客 喵通贩 技术宅 FanMoe 动漫 动画 宅 宅文化">
+    <link rel="apple-touch-icon-precomposed" href="./source/img/avatar.jpg">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123362104-2"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-123362104-2');</script>
+</head>
+
+<body>
+    <link href="css/nekotora.css" rel="stylesheet">
+    <link href="css/flaghome.css" rel="stylesheet">
+    <nav><a href="//flag.moe" class="active">Index</a> <a class="clip"></a> <a href="//blog.flag.moe">Blog</a> <a
+            href="//gate.flag.moe">Gate</a> <a href="//lab.flag.moe">Lab</a> <a class="clip"></a> <a
+            href="//nyanket.com">Nyanket</a></nav>
+    <div class="background"><canvas id="startrack"></canvas>
+        <div class="cover"></div>
+    </div>
+    <div class="main">
+        <div class="ch intro">
+            <div class="container">
+                <div class="hello">
+                    <h1 id="slogan">思考中……</h1>
+                    <h2>
+                        <div class="circle"><span></span> <span></span> <span></span></div>哞菇 / Nekotora
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="ch about">
+            <div class="container">
+                <h2 class="chtitle">Who is <span>Nekotora</span>？</h2>
+                <div class="clear">
+                    <div class="introduct"><img class="avatar" src="img/avatar.jpg">
+                        <p>坚硬的代替了那些柔软的，清晰的取代了那些模糊的。那些滑溜溜和黏糊糊的东西，带你来到了世界的角落。</p>
+                        <p style="padding-bottom:1em">How lucky to meet you!</p>
+                        <p>你好，这里是哞菇 <sup>Nekotora</sup> ，21岁，是学生，对有趣的世界和可能有趣的你感到好奇，热爱Tech和ACG文化，正在尝试从事互联网产品/Web开发相关工作。
+                        </p>
+                        <p>希望能与你在比特之海的繁星之下相见！</p>
+                        <div class="chatbox">
+                            <div class="line loading"><span></span> <span></span> <span></span></div>
+                        </div>
+                    </div>
+                    <ul class="skill clear">
+                        <li>
+                            <p>HTML5/CSS3</p>
+                            <div class="progress">
+                                <div style="width:78%"></div><span>制作网站程度的能力</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>JavaScript/Typescript</p>
+                            <div class="progress">
+                                <div style="width:55%"></div><span>使用现代轮子程度的能力</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>PHP</p>
+                            <div class="progress">
+                                <div style="width:60%"></div><span>赞美最好的语言程度的能力</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>数字设计</p>
+                            <div class="progress">
+                                <div style="width:65%"></div><span>让自己舒服程度的能力</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>世界</p>
+                            <div class="progress">
+                                <div style="width:20%"></div><span>观测世界程度的能力</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>搞事情</p>
+                            <div class="progress">
+                                <div style="width:82%"></div><span>让事情发生程度的能力</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>魔法</p>
+                            <div class="progress">
+                                <div style="width:12%"></div><span>和普通人相同程度的能力</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>MoePower</p>
+                            <div class="progress">
+                                <div style="width:99%"></div><span>成为萌二程度的能力</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="find ch">
+            <div class="container links">
+                <h2 class="chtitle">哞菇生活的<span>地方</span></h2>
+                <div class="clear col-3"><a href="https://blog.flag.moe/" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color: #28A9E0"></div>
+                            <div class="inner"><span>博客</span></div>
+                        </div>
+                    </a><a href="https://lab.flag.moe/" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color: #28A9E0"></div>
+                            <div class="inner"><span>实验室</span></div>
+                        </div>
+                    </a><a href="https://gate.flag.moe/" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color: #28A9E0"></div>
+                            <div class="inner"><span>任意门</span></div>
+                        </div>
+                    </a></div>
+                <div class="clear"><a
+                        href="http://sighttp.qq.com/authd?IDKEY=e41f954ca24ecab73cac43a1315de3577cf23a055ede6881"
+                        target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color: #28A9E0"></div>
+                            <div class="inner"><i class="icon-qq"></i> <span>QQ</span></div>
+                        </div>
+                    </a><a href="mailto:fmoe@qq.com" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color: #28A9E0"></div>
+                            <div class="inner"><i class="icon-mail"></i> <span>Mail</span></div>
+                        </div>
+                    </a><a href="http://www.weibo.com/xxnblog" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color: #E6162D"></div>
+                            <div class="inner"><i class="icon-weibo"></i> <span>Weibo</span></div>
+                        </div>
+                    </a><a href="http://space.bilibili.com/489703" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color: #F9A2A8"></div>
+                            <div class="inner"><i class="icon-bilibili"></i> <span>Bilibili</span></div>
+                        </div>
+                    </a><a href="https://twitter.com/NekotoraMoe" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color: #28A9E0"></div>
+                            <div class="inner"><i class="icon-twitter"></i> <span>Twitter</span></div>
+                        </div>
+                    </a><a href="http://www.zhihu.com/people/nekotora" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color: #0F88EB"></div>
+                            <div class="inner"><i class="icon-zhihu"></i> <span>知乎</span></div>
+                        </div>
+                    </a><a href="http://bgm.tv/user/nekotora" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color: #F09199"></div>
+                            <div class="inner"><i class="icon-bookmark"></i> <span>Bangumi</span></div>
+                        </div>
+                    </a><a href="http://music.163.com/#/user/home?id=52570689" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color: #F12D35"></div>
+                            <div class="inner"><i class="icon-netease_music"></i> <span>网易云音乐</span></div>
+                        </div>
+                    </a><a href="https://github.com/Nekotora" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color: #353535"></div>
+                            <div class="inner"><i class="icon-github"></i> <span>Github</span></div>
+                        </div>
+                    </a><a href="https://www.instagram.com/nekotoramoe/" target="_blank">
+                        <div class="item">
+                            <div class="bg" style="background-color: #b600ff"></div>
+                            <div class="inner"><i class="icon-instagram"></i> <span>Instgram</span></div>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="gate ch">
+            <div class="container links">
+                <h2 class="chtitle">哞菇的<span>邻居</span>们</h2>
+                <div class="clear"><a href="https://apporz.com/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/micooz.jpg"></div>
+                            <div class="inner">
+                                <h5>Micooz</h5>
+                                <p>可爱的男孩子XD</p>
+                            </div>
+                        </div>
+                    </a><a href="http://shiromi.org/" target="_blank">
+                        <div class="item akarin">
+                            <div class="avatar"><img src="./source/p/lynn.jpg"></div>
+                            <div class="inner">
+                                <h5><span style="opacity: .3">毫无存在感</span>的凌</h5>
+                                <p>可靠的魔法少年</p>
+                            </div>
+                        </div>
+                    </a><a href="http://mouto.org/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/totoro.jpg"></div>
+                            <div class="inner">
+                                <h5>卜卜口</h5>
+                                <p>无处不在的美味卜卜</p>
+                            </div>
+                        </div>
+                    </a><a href="http://moe.lu/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/an.jpg"></div>
+                            <div class="inner">
+                                <h5>三千院の暗</h5>
+                                <p>人生赢家小暗</p>
+                            </div>
+                        </div>
+                    </a><a href="http://sora.sound.moe/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/sora.jpg"></div>
+                            <div class="inner">
+                                <h5>妹空</h5>
+                                <p>草莓味的妹空酱</p>
+                            </div>
+                        </div>
+                    </a><a href="http://rakume.com/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/rakume.jpg"></div>
+                            <div class="inner">
+                                <h5>Rakume</h5>
+                                <p>消失在人群中的团长</p>
+                            </div>
+                        </div>
+                    </a><a href="http://www.almsev.com/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/almsev.jpg"></div>
+                            <div class="inner">
+                                <h5>Almsev</h5>
+                                <p>消失的霖菓村村长</p>
+                            </div>
+                        </div>
+                    </a><a href="https://best33.com/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/oott123.jpg"></div>
+                            <div class="inner">
+                                <h5>Oott123</h5>
+                                <p>三三菊苣</p>
+                            </div>
+                        </div>
+                    </a><a href="https://digua.me/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/digua.jpg"></div>
+                            <div class="inner">
+                                <h5>地瓜</h5>
+                                <p>烤的热乎乎的地瓜</p>
+                            </div>
+                        </div>
+                    </a><a href="http://www.ybusad.com/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/ybusad.jpg"></div>
+                            <div class="inner">
+                                <h5>孙天骁</h5>
+                                <p>孙天骁的个人网站</p>
+                            </div>
+                        </div>
+                    </a><a href="https://www.qiyichao.cn/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/cenegd.jpg"></div>
+                            <div class="inner">
+                                <h5>亓一超</h5>
+                                <p>cenegd</p>
+                            </div>
+                        </div>
+                    </a><a href="https://dante.io/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/dante.jpg"></div>
+                            <div class="inner">
+                                <h5>Dante</h5>
+                                <p>cfan菊苣</p>
+                            </div>
+                        </div>
+                    </a><a href="https://www.starryvoid.com/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/starryvoid.jpg"></div>
+                            <div class="inner">
+                                <h5>Starryvoid</h5>
+                                <p>繁星天</p>
+                            </div>
+                        </div>
+                    </a><a href="https://blog.sylingd.com/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/sylingd.jpg"></div>
+                            <div class="inner">
+                                <h5>泷涯</h5>
+                                <p>坠吼的膜法师</p>
+                            </div>
+                        </div>
+                    </a><a href="https://www.jipai.moe/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/jipai.jpg"></div>
+                            <div class="inner">
+                                <h5>鸡排</h5>
+                                <p>好次的鸡排</p>
+                            </div>
+                        </div>
+                    </a><a href="https://linux.dog/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/shellv.jpg"></div>
+                            <div class="inner">
+                                <h5>电磁泡ShellV</h5>
+                                <p>泡！泡泡泡！</p>
+                            </div>
+                        </div>
+                    </a><a href="https://www.tcdw.net/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/tcdw.jpg"></div>
+                            <div class="inner">
+                                <h5>吐槽大王</h5>
+                                <p>好耶，是tcdw!</p>
+                            </div>
+                        </div>
+                    </a><a href="http://jack-works.github.io/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/jackworks.jpg"></div>
+                            <div class="inner">
+                                <h5>光棱</h5>
+                                <p>JackWorks 暂时离开了</p>
+                            </div>
+                        </div>
+                    </a><a href="https://www.aoisnow.net/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/touka.jpg"></div>
+                            <div class="inner">
+                                <h5>洛城东华</h5>
+                                <p>世界另一端的无证网管</p>
+                            </div>
+                        </div>
+                    </a><a href="https://blog.blingwang.cn/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/blingwang.jpg"></div>
+                            <div class="inner">
+                                <h5>派兹的小站</h5>
+                                <p>银不了，尽梨了</p>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="clear" style="margin-top: 30px"><a href="http://www.smileacg.cc/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/soap.jpg"></div>
+                            <div class="inner">
+                                <h5>逝梦ACG Project</h5>
+                                <p>有爱的创作团队XD</p>
+                            </div>
+                        </div>
+                    </a><a href="http://shimmer.neusoft.edu.cn/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/shimmer.jpg"></div>
+                            <div class="inner">
+                                <h5>微光网络工作室</h5>
+                                <p>大连东软Web团队</p>
+                            </div>
+                        </div>
+                    </a><a href="http://nss.neusoft.edu.cn/" target="_blank">
+                        <div class="item">
+                            <div class="avatar"><img src="./source/p/nss.jpg"></div>
+                            <div class="inner">
+                                <h5>网络安全工作室</h5>
+                                <p>大连东软网络安全团队</p>
+                            </div>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="footer ch">
+            <div class="container">
+                <h3>哞菇@Nekotora</h3>
+                <p>蘑菇森林的尽头，新世界的起点</p>
+                <p class="c"><a href="//gate.flag.moe/">Say hello to me @ i#flag.moe</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/page.js"></script>
+    <script type="text/javascript" src="//tajs.qq.com/stats?sId=30582263" charset="UTF-8"></script>
+</body>
+
+</html>

@@ -595,6 +595,9 @@ ul.skill li .progress div {
     line-height: 60px;
     font-size: 13px;
   }
+  .find .links .item i{
+    display: none;
+  }
   .gate .links .item .avatar {
     height: 40px;
     line-height: 40px;

@@ -13,6 +13,8 @@
             (ctx.fillStyle = "rgba(21,21,21,1)"),
             ctx.fillRect(0, 0, cw, ch);
     });
+
+    
 var cf = document.createElement("canvas"),
     c = document.getElementById("startrack");
 (c.width = cf.width = cw = c.offsetWidth),

@@ -35,14 +35,18 @@ var ctx = c.getContext("2d"),
     stars = [],
     drawTimes = 0;
 
+
 /* -------------------随机函数 ---------------*/
+
 function rand(t, a) {
     var e = a - t,
         n = Math.random();
         return t + Math.round(n * e);
 }
 
+
 /* -------------------随机创建一个星星存入数组 ---------------*/
+
 function createStar() {
     stars.push({
         x: rand(-cf.width, cf.width),

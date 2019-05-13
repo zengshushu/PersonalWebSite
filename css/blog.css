@@ -1,0 +1,136 @@
+/* ---------------------------主体body -------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+body,
+html {
+  font-family: "Microsoft YaHei";
+  -webkit-font-smoothing: antialiased;
+  color: #252525;
+  min-width: 1180px;
+  background-color: #fff;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+.container {
+  position: relative;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.box .logo {
+  float: left;
+  font-size: 1.5em;
+  opacity: 1;
+}
+nav{
+  background-color: rgb(95, 98, 99);
+  opacity: 0.4;
+}
+.container .box {
+  width: 100%;
+  display: inline-block;
+  color: #fff;
+}
+
+span a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 25px;
+  letter-spacing: 10;
+  opacity: 1;
+}
+.container .right {
+  font-size: 1.3em;
+  float: right;
+  color: #252525;
+}
+.container .right .active {
+  color: #ece9e9;
+}
+
+body{
+  /* 加载背景图 */
+background-image: url(../img/back.jpg);
+/* 背景图垂直、水平均居中 */
+background-position: center center;
+/* 背景图不平铺 */
+background-repeat: no-repeat;
+/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+background-attachment: fixed;
+/* 让背景图基于容器大小伸缩 */
+background-size: cover;
+/* 设置背景颜色，背景图加载过程中会显示背景色 */
+background-color: #aecef3;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.blog .main{
+  margin-bottom: 20vh;
+  background-color: #fff;
+  height: 100vh;
+  opacity: 0.4;
+}
+
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 80%;
+  }
+  nav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body,
+  html {
+    min-width: 0;
+  }
+  .container {
+    width: auto;
+    margin: 0 10%;
+  }
+  .box{
+    display: block;
+    font-size: 0.7em;
+  }
+  .box .logo{
+    display: none;
+  }
+  .box .right{
+    margin-top: 0.15em;
+  }
+}
+@media screen and (max-width: 700px) {
+  body,
+  html {
+    min-width: 0;
+  }
+  .container {
+    width: auto;
+    margin: 0 10%;
+  }
+  .box{
+    display: block;
+    font-size: 0.7em;
+  }
+  .box .logo{
+    display: none;
+  }
+  .box .right{
+    margin-top: 0.15em;
+  }
+}

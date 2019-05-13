@@ -76,11 +76,17 @@ background-color: #aecef3;
   clear: both;
 }
 
-.blog .main{
+
+.inside{
   background-color: #fff;
-  height: 140vh;
-  opacity: 0.4;
+  background:rgba(255, 255, 255, 0.8);
+  height: 20vh;
+  width: 60vw;
+  margin: 0 auto;
+  margin-top: 20px;
+
 }
+
 .footer {
   text-align: center;
   background-color: #252525;

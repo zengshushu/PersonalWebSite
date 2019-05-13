@@ -16,6 +16,8 @@
     <meta name="description" content="星辰是黑月的个人网站，期待与更多的人相遇！">
     <meta name="keywords" content="月 黑月 个人网站 博客 前端 BlackMoon">
     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/site.css">
 
 </head>
 
@@ -40,23 +42,46 @@
     <div class="blog">
         <div class="container">
             <div class="clear">
-                <div class="up main">
 
-                </div>
+                    <div class=" wow fadeInDown inside">
+                    </div>
+                    <div class="wow fadeInDown inside" data-wow-delay="0.1s">
+                    </div>
+                    <div class="wow fadeInDown inside" data-wow-delay="0.3s">
+                    </div>
+                    <div class="wow fadeInDown inside" data-wow-delay="0.4s">
+                    </div>
+                    <div class="wow fadeInDown inside" data-wow-delay="0.5s">
+                    </div>
             </div>
         </div>
     </div>
 
-<div class="footer">
-    <div class="container">
-        <h3>黑月@Nekota</h3>
-        <p>我从远方赶来，恰巧你们也在。</p>
-        <p class="c"><a href="">Say hello to me @ BlackMoon</a></p>
+    <div class="footer">
+        <div class="container">
+            <h3>黑月@Nekota</h3>
+            <p>我从远方赶来，恰巧你们也在。</p>
+            <p class="c"><a href="">Say hello to me @ BlackMoon</a></p>
+        </div>
     </div>
-</div>
 
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/blog.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+
+            }
+        );
+        wow.init();
+        document.getElementById('moar').onclick = function () {
+            var section = document.createElement('section');
+            section.className = 'section--purple wow fadeInDown';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
 </body>
 
 </html>

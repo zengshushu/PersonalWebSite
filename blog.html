@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<!doctype html>
+<html lang="en">
+<!-- 
+            黑月/BlackMoon V1 
+  -->
 
 <head>
     <!-- Required meta tags -->
@@ -16,72 +14,117 @@
     <meta name="description" content="星辰是黑月的个人网站，期待与更多的人相遇！">
     <meta name="keywords" content="月 黑月 个人网站 博客 前端 BlackMoon">
     <link rel="stylesheet" href="css/blog.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/site.css">
-
+    <link rel="stylesheet" href="css/iconfont.css">
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <script id="__bs_script__">//<![CDATA[
+        document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+
+    <!----------------------------------导航------------------------------------>
     <nav>
-        <div class="container">
-            <div class="box">
-                <span href="#" class="logo">黑月&Nekota</span>
-                <span class="right">
-                    <a href="#" class="active">Blog</a>
-                    <a href="#">Index</a>
-                    <a href="#">Lab</a>
-                    <a href="#">Nyanket</a>
-                </span>
-            </div>
-        </div>
+        <a href="index.html">Index</a>
+        <a class="clip"></a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="#">Gate</a>
+        <a href="#">Lab</a>
+        <a class="clip"></a>
+        <a href="#">Nyanket</a>
     </nav>
+    <!----------------------------------背景------------------------------------>
+    <div class="background"><canvas id="canvas"></canvas>
+        <div class="cover"></div>
+    </div>
 
-    <div class="blog">
-        <div class="container">
-            <div class="clear">
+    <!----------------------------------欢迎------------------------------------>
+    <div class="main">
+        <div class="ch intro">
+            <div class="container">
+                <div class="hello">
+                    <h1>Blog 在这里分享和碎碎念</h1>
+                    <h2>
+                        <div class="circle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        黑月 / Nekota
+                    </h2>
+                </div>
+            </div>
+        </div>
 
-                    <div class=" wow fadeInDown inside">
-                    </div>
-                    <div class="wow fadeInDown inside" data-wow-delay="0.1s">
-                    </div>
-                    <div class="wow fadeInDown inside" data-wow-delay="0.3s">
-                    </div>
-                    <div class="wow fadeInDown inside" data-wow-delay="0.4s">
-                    </div>
-                    <div class="wow fadeInDown inside" data-wow-delay="0.5s">
-                    </div>
+        <!----------------------------------邻居------------------------------------>
+        <div class="gate ch">
+            <div class="container links">
+                <h2 class="chtitle">无聊的<span>写在了</span>这里</h2>
+                <div class="clear">
+                    <a>
+                        <div class="item">
+                         
+                            <div class="inner">
+                                <h5>星像馆上线咯~ovo</h5>
+                                <p>一直心心念念说弄一个博客  </p>
+                                <p>这该死的拖延<br>症啊! 以后也不会挂在GitHub上了<br>不过现在暂时没钱租服务器(卑微)</p>
+                                <p>既然决定好好搞一搞惹! 先上线一个<br>再慢慢完善吧</p>
+                                <p>现在是9102年5月13日的21点25分!</p>
+                                <p>咕咕咕</p>
+                                <p>好啦,我要去快乐的守望先锋啦,就酱</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a>
+                        <div class="item">
+                           
+                            <div class="inner">
+                                <h5>学习Canvas制作动画</h5>
+                                <p>Canvas? 开始的时候只会抠脑壳 </p>
+                                <p>在那里学习呢? 慕课网上搜Canvas<br>二倍速观看最佳(抠脑壳)</p>
+                                <p>既然决定好好扣脑壳! 先做一个demo<br>再慢慢完善吧</p>
+                                <p>于是模仿李总的网站做了星象图</p>
+                                <p>咕咕咕</p>
+                                <p>总之,Canvas是让人抠脑壳的技能</p>
+                                <p>不过真是太棒啦!!!!</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a onclick="alert('啊噢!页面被星河藏起来了!')">
+                        <div class="item">
+                          
+                            <div class="inner">
+                                <h5>关于星像馆之后</h5>
+                                <p>之后呢,会吧实验室弄好(也就这两天吧)</p>
+                                <p>但是估计会咕咕咕<br>嘻嘻</p>
+                                <p>然后会把星像馆挂在外网服务器上<br>就正式脱离GitHub啦!!</p>
+                                <p>还有计划有留言功能~</p>
+                                <p>(估计没几个人留言)</p>
+                                <p>后端的话</p>
+                                <p>PHP是世界上最好的编程语言!!</p>
+                            </div>
+                        </div>
+                    </a>
+                  
+                </div>
+            </div>
+        </div>
+        <!----------------------------------footer------------------------------------>
+        <div class="footer ch">
+            <div class="container">
+                <h3>黑月@Nekota</h3>
+                <p>我从远方赶来，恰巧你们也在。</p>
+                <p class="c"><a href="">Say hello to me @ BlackMoon</a></p>
             </div>
         </div>
     </div>
 
-    <div class="footer">
-        <div class="container">
-            <h3>黑月@Nekota</h3>
-            <p>我从远方赶来，恰巧你们也在。</p>
-            <p class="c"><a href="">Say hello to me @ BlackMoon</a></p>
-        </div>
-    </div>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/blog.js"></script>
-    <script src="js/wow.js"></script>
-    <script>
-        wow = new WOW(
-            {
-                animateClass: 'animated',
-
-            }
-        );
-        wow.init();
-        document.getElementById('moar').onclick = function () {
-            var section = document.createElement('section');
-            section.className = 'section--purple wow fadeInDown';
-            this.parentNode.insertBefore(section, this);
-        };
-    </script>
 </body>
 
 </html>

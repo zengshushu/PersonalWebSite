@@ -7,31 +7,42 @@
     function (t) {
         window.setTimeout(t, 1e3 / 60);
     }),
+
+/* -------------------窗口改变 ---------------*/
+
     (window.onresize = function () {
-        (c.width = cw = c.offsetWidth),
-            (c.height = ch = c.offsetHeight),
-            (ctx.fillStyle = "rgba(21,21,21,1)"),
-            ctx.fillRect(0, 0, cw, ch);
+        c.width = cw = c.offsetWidth;
+        c.height = ch = c.offsetHeight;
+        ctx.fillStyle = "rgba(21,21,21,1)";
+        ctx.fillRect(0, 0, cw, ch);
     });
 
-    
-var cf = document.createElement("canvas"),
+/* -------------------初始化画布 ---------------*/
+var cf = document.createElement("canvas");
     c = document.getElementById("startrack");
-(c.width = cf.width = cw = c.offsetWidth),
-    (c.height = cf.height = ch = c.offsetHeight);
+    c.width = cf.width = cw = c.offsetWidth;
+    c.height = cf.height = ch = c.offsetHeight;
+/* -------------------画布大小宽最大就*2.6 高最大同理 ---------------*/
 var longside = Math.max(cw, ch);
-(cf.width = 2.6 * longside), (cf.height = 2.6 * longside);
+    cf.width =  2.6*longside;
+    cf.height = 2.6*longside;
+
+/* -------------------创建canvas画布 与储存星星的数组---------------*/ 
 var ctx = c.getContext("2d"),
     cftx = cf.getContext("2d"),
     centerX = cw,
     centerY = 0,
     stars = [],
     drawTimes = 0;
+
+/* -------------------随机函数 ---------------*/
 function rand(t, a) {
     var e = a - t,
         n = Math.random();
-    return t + Math.round(n * e);
+        return t + Math.round(n * e);
 }
+
+/* -------------------随机创建一个星星存入数组 ---------------*/
 function createStar() {
     stars.push({
         x: rand(-cf.width, cf.width),
@@ -40,6 +51,8 @@ function createStar() {
         color: randomColor()
     });
 }
+
+/* -------------------随机颜色 ---------------*/
 function randomColor() {
     return (
         "rgba(" +
@@ -53,47 +66,60 @@ function randomColor() {
         ")"
     );
 }
+/* -------------------循环画每一个星星 10000个---------------*/
+
+for (var count = 2e4; count!=0; count--){
+    createStar();
+    console.log('star[count]');
+}
+    drawStar();
+
+var x = centerX;
+    y = centerY;
+
 function drawStar() {
     for (var t = stars.length; t--;) {
         var a = stars[t];
         cftx.beginPath(),
-            cftx.arc(a.x, a.y, a.size, 0, 2 * Math.PI, !0),
-            (cftx.fillStyle = a.color),
-            cftx.closePath(),
-            cftx.fill();
+        cftx.arc(a.x, a.y, a.size, 0, 2 * Math.PI, !0),
+        cftx.fillStyle = a.color,
+        cftx.closePath(),
+        cftx.fill();
     }
 }
+/* -------------------轨迹消失---------------*/
+    ctx.fillStyle = "rgba(21,21,21,1)",
+    ctx.fillRect(0, 0, cw, ch),
+    ctx.lineCap = "round";
+
 function drawfromCache() {
     ctx.drawImage(cf, -cf.width / 2, -cf.height / 2);
 }
+
 function loop() {
     drawfromCache(),
         ++drawTimes > 150 &&
-        drawTimes % 8 == 0 &&
-        ((ctx.fillStyle = "rgba(0,0,0,.04)"),
-            ctx.fillRect(-3 * longside, -3 * longside, 6 * longside, 6 * longside)),
+        drawTimes % 8 == 0 &&((ctx.fillStyle = "rgba(0,0,0,.04)"), ctx.fillRect(-3 * longside, -3 * longside, 6 * longside, 6 * longside)),
         rotateCanvas(0.025);
 }
+
+
 function rotateCanvas(t) {
     ctx.rotate((t * Math.PI) / 180);
 }
-(ctx.fillStyle = "rgba(21,21,21,1)"),
-    ctx.fillRect(0, 0, cw, ch),
-    (ctx.lineCap = "round");
-for (var count = 2e4; count--;) createStar();
-drawStar();
-var x = centerX,
-    y = centerY;
+
+
+
 function fireAnimate() {
     requestAnimFrame(fireAnimate), loop();
 }
+
+
 function changeStar() {
     loop = function () {
         drawfromCache(),
             ++drawTimes > 150 &&
-            drawTimes % 8 == 0 &&
-            ((ctx.fillStyle = "rgba(0,0,0,.04)"),
-                ctx.fillRect(-3 * longside, -3 * longside, 6 * longside, 6 * longside)),
+            drawTimes % 8 == 0 &&((ctx.fillStyle = "rgba(0,0,0,.04)"),ctx.fillRect(-3 * longside, -3 * longside, 6 * longside, 6 * longside)),
             rotateCanvas(random(1, 100));
     };
 }
@@ -121,11 +147,14 @@ function getMsg() {
         a = random(0, t.length - 1);
     $("#slogan").html(t[a]);
 }
+
+
 function random(t, a) {
     var e = a - t,
         n = Math.random();
     return t + Math.round(n * e);
 }
+
 ctx.translate(x, y),
     fireAnimate(),
     $(function () {
@@ -136,6 +165,9 @@ ctx.translate(x, y),
             ? $(".background").addClass("fixed")
             : $(".background").removeClass("fixed");
     }),
+
+
+
     $(function () {
         $(".chatbox .line[data-meta-conf=init]").css("display", "block"),
             $("[data-meta-flag]").on("click", function () {

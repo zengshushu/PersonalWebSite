@@ -1,0 +1,47 @@
+/* ---------------------------主体body -------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  body,
+  html {
+    font-family: "Microsoft YaHei";
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    min-width: 1180px;
+    background-color: #e3e3e3;
+    font-size: 14px;
+    overflow-x: hidden;
+  
+  }
+
+  .container {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;  
+  }
+
+  .logo{
+      font-size: 24px;
+    opacity: 1;
+  }
+nav{
+    background-color: #252525;
+    color: #e3e3e3;
+    opacity: 0.4;
+}
+.inbox{
+    display: inline-block;
+}
+
+ .inbox a{
+      display: inline-block;
+      text-decoration: none;
+      color: #e3e3e3;
+      opacity: 1;
+
+  }

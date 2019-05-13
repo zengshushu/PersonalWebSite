@@ -23,15 +23,17 @@ var longside = Math.max(cw, ch);
 (cf.width = 2.6 * longside), (cf.height = 2.6 * longside);
 var ctx = c.getContext("2d"),
     cftx = cf.getContext("2d"),
-    centerX = cw,
-    centerY = 0,
+    centerX = cw/2,
+    centerY = ch/2,
     stars = [],
     drawTimes = 0;
+
 function rand(t, a) {
     var e = a - t,
         n = Math.random();
     return t + Math.round(n * e);
 }
+
 function createStar() {
     stars.push({
         x: rand(-cf.width, cf.width),

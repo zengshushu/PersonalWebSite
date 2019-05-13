@@ -158,4 +158,11 @@ background-color: #aecef3;
   .box .right{
     margin-top: 0.15em;
   }
+
+  .footer p {
+  font-size: 12px;
+  letter-spacing: 1em;
+  opacity: 0.3;
+  letter-spacing: 0.4em;
+}
 }

@@ -23,8 +23,8 @@ var longside = Math.max(cw, ch);
 (cf.width = 2.6 * longside), (cf.height = 2.6 * longside);
 var ctx = c.getContext("2d"),
     cftx = cf.getContext("2d"),
-    centerX = cw/2,
-    centerY = ch/2,
+    centerX = cw,
+    centerY = 0,
     stars = [],
     drawTimes = 0;
 

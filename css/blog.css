@@ -18,7 +18,6 @@ html {
 .container {
   position: relative;
   width: 1000px;
-  height: 100%;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -30,7 +29,7 @@ html {
 }
 nav{
   background-color: rgb(95, 98, 99);
-  opacity: 0.4;
+  opacity: 0.8;
 }
 .container .box {
   width: 100%;
@@ -78,13 +77,39 @@ background-color: #aecef3;
 }
 
 .blog .main{
-  margin-bottom: 20vh;
   background-color: #fff;
-  height: 100vh;
+  height: 140vh;
   opacity: 0.4;
 }
-
-
+.footer {
+  text-align: center;
+  background-color: #252525;
+  opacity: 0.8;
+  color: #e3e3e3;
+  z-index: -9999;
+}
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer h3 {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.8em;
+  margin: 6px 0;
+}
+.footer p {
+  font-size: 12px;
+  letter-spacing: 1em;
+  opacity: 0.3;
+}
+.footer p.c {
+  margin-top: 20px;
+  letter-spacing: 0.1em;
+}
 @media screen and (min-width: 1400px) {
   .container {
     width: 80%;

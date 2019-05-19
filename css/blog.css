@@ -317,6 +317,7 @@ ul.skill li .progress div {
 
 /* ---------------------------footer-------------------------*/
 .footer {
+  bottom: 0;
   text-align: center;
   background-color: rgba(150,82,81,1);
 }
@@ -349,6 +350,9 @@ ul.skill li .progress div {
   }
   nav a {
     font-size: 18px;
+  }
+  footer{
+    margin-top: 600px;
   }
 }
 
